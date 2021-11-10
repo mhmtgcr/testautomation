@@ -1,29 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="7751" started-at="2021-11-09T11:47:51Z" finished-at="2021-11-09T11:47:59Z">
+  <suite name="Default suite" duration-ms="23708" started-at="2021-11-10T12:10:42Z" finished-at="2021-11-10T12:11:06Z">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberTest.MainTestRunnerTest@6107227e]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="7751" started-at="2021-11-09T11:47:51Z" finished-at="2021-11-09T11:47:59Z">
-      <class name="seleniumTest.SeleniumTest">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:seleniumTest.SeleniumTest@240237d2]" name="beforeClass" is-config="true" duration-ms="4242" started-at="2021-11-09T11:47:51Z" finished-at="2021-11-09T11:47:56Z">
+    <test name="Default test" duration-ms="23708" started-at="2021-11-10T12:10:42Z" finished-at="2021-11-10T12:11:06Z">
+      <class name="cucumberTest.MainTestRunnerTest">
+        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumberTest.MainTestRunnerTest@6107227e]" name="setUpClass" is-config="true" duration-ms="1061" started-at="2021-11-10T12:10:42Z" finished-at="2021-11-10T12:10:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@76304b46]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="testConnection()[pri:0, instance:seleniumTest.SeleniumTest@240237d2]" name="testConnection" duration-ms="2666" started-at="2021-11-09T11:47:56Z" finished-at="2021-11-09T11:47:58Z">
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberTest.MainTestRunnerTest@6107227e]" name="runScenario" duration-ms="22544" started-at="2021-11-10T12:10:44Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-11-10T12:11:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Find Owner"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Pet Clinic]"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testConnection -->
-        <test-method status="PASS" signature="testFindOwner()[pri:0, instance:seleniumTest.SeleniumTest@240237d2]" name="testFindOwner" duration-ms="302" started-at="2021-11-09T11:47:58Z" finished-at="2021-11-09T11:47:59Z">
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:cucumberTest.MainTestRunnerTest@6107227e]" name="tearDownClass" is-config="true" duration-ms="28" started-at="2021-11-10T12:11:06Z" finished-at="2021-11-10T12:11:06Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testFindOwner -->
-        <test-method status="PASS" signature="testFindVeterinarians()[pri:0, instance:seleniumTest.SeleniumTest@240237d2]" name="testFindVeterinarians" duration-ms="482" started-at="2021-11-09T11:47:59Z" finished-at="2021-11-09T11:47:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testFindVeterinarians -->
-      </class> <!-- seleniumTest.SeleniumTest -->
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- cucumberTest.MainTestRunnerTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
